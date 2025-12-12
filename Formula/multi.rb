@@ -1,33 +1,35 @@
 class Multi < Formula
   desc "Move fast without breaking things."
   homepage "https://multitool.run/"
-  version "0.3.5"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/wack/multitool/releases/download/v0.3.5/multitool-aarch64-apple-darwin.tar.xz"
-      sha256 "0d82e6b07b5526ea67471f493ee3fceb0543321d96bb03c8d50e21cc540f27d1"
+      url "https://github.com/wack/multitool/releases/download/v0.4.0/multitool-aarch64-apple-darwin.tar.xz"
+      sha256 "7d5e286ce3fcdb1acf7517daf0d0a08413b57308ff8690e49427e8d06b63bae3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wack/multitool/releases/download/v0.3.5/multitool-x86_64-apple-darwin.tar.xz"
-      sha256 "abcb166a30f9b989fdd771c23e0d6d20792c99e718e607969ab06bd8c4440295"
+      url "https://github.com/wack/multitool/releases/download/v0.4.0/multitool-x86_64-apple-darwin.tar.xz"
+      sha256 "e58fb4bfc017d2942120e686a7dcbe42c2ecc3d4b72ed9ff53b7755563fe9efc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/wack/multitool/releases/download/v0.3.5/multitool-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "67a269ed1e73e87687c3714d9deaf735883087b8bda4d8fb65bcda05373d0ec7"
+      url "https://github.com/wack/multitool/releases/download/v0.4.0/multitool-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "48d66aeae5dce3588f03724a28f07cae53fdb31f2faae604794981c7935df3f6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wack/multitool/releases/download/v0.3.5/multitool-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ed41aa5fa5470eb39ee5c5072554720efbbfe831451fa39adaadd592038848a3"
+      url "https://github.com/wack/multitool/releases/download/v0.4.0/multitool-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "26d6a5c5751ee160ff5e90cd35b8a286175b1bc064c91fad7baf8ff2d73796bf"
     end
   end
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
-    "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-unknown-linux-gnu":  {},
+    "aarch64-apple-darwin":              {},
+    "aarch64-unknown-linux-gnu":         {},
+    "x86_64-apple-darwin":               {},
+    "x86_64-unknown-linux-gnu":          {},
+    "x86_64-unknown-linux-musl-dynamic": {},
+    "x86_64-unknown-linux-musl-static":  {},
   }.freeze
 
   def target_triple
