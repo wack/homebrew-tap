@@ -1,25 +1,25 @@
 class Multi < Formula
   desc "Move fast without breaking things."
   homepage "https://multitool.run/"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/wack/multitool/releases/download/v0.4.0/multitool-aarch64-apple-darwin.tar.xz"
-      sha256 "7d5e286ce3fcdb1acf7517daf0d0a08413b57308ff8690e49427e8d06b63bae3"
+      url "https://github.com/wack/multitool/releases/download/v0.5.0/multitool-aarch64-apple-darwin.tar.xz"
+      sha256 "1c247468af8d19a8ffde0bda6280ca0f1e655b98e97cebf00dbf504ea8e4e9b4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wack/multitool/releases/download/v0.4.0/multitool-x86_64-apple-darwin.tar.xz"
-      sha256 "e58fb4bfc017d2942120e686a7dcbe42c2ecc3d4b72ed9ff53b7755563fe9efc"
+      url "https://github.com/wack/multitool/releases/download/v0.5.0/multitool-x86_64-apple-darwin.tar.xz"
+      sha256 "e1821498b209ed10fe2c5e79b1e48100e957ba22086c6b1d0e544bef4cbd9ca1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/wack/multitool/releases/download/v0.4.0/multitool-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "48d66aeae5dce3588f03724a28f07cae53fdb31f2faae604794981c7935df3f6"
+      url "https://github.com/wack/multitool/releases/download/v0.5.0/multitool-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "34aa849d9cc4bba2fbb401f2d90eff5f180af980878d5aace7e628da96718351"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wack/multitool/releases/download/v0.4.0/multitool-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "26d6a5c5751ee160ff5e90cd35b8a286175b1bc064c91fad7baf8ff2d73796bf"
+      url "https://github.com/wack/multitool/releases/download/v0.5.0/multitool-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "630ad303856160216bdd7cdb3f264dbb1c8db33498e152ddb322e657a01327a0"
     end
   end
 
